@@ -1,0 +1,1289 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <link rel="shortcut icon" href="img/fav.png" type="image/x-icon">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries-->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file://-->
+    <!--[if lt IE 9]><script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script><script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+    <title>EscWelt - Event order</title>
+    <meta name="description" content="">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header class="header dark inner_page_header">
+        <div class="header_main__top">
+            <div class="header_top_left">
+                <div class="lang_select_wrapper" id="lang_select_dropdown">
+                    <div class="lang_select_label" data-target="#lang_select_dropdown">
+                        <div class="lang_select_label_text">Deutsch</div>
+                        <div class="lang_select_label_ico"><img src="img/de.png" alt="img" /></div>
+                    </div>
+                    <ul class="lang_select_dropdown">
+                        <li><a class="lang_item" href="#"><img src="img/uk.png" alt="img"/></a></li>
+                    </ul>
+                </div>
+            </div><a class="main_logo" href="#"><img src="img/logo.png" alt="img"/></a>
+            <div class="header_top_right">
+                <ul class="header_phone_list">
+                    <li><a href="tel:+491733109181">+49 173 3109181</a></li>
+                </ul><a class="main_btn small bordered" href="#"><span class="main_btn_inner">GUTSCHEINE</span></a><a class="main_btn small" href="#"><span class="main_btn_inner">Jetzt buchen</span></a><a class="header_links_trigger header_links_trigger__js"
+                    href="#header_nav"><span></span><span></span><span></span></a></div>
+            <ul class="header_nav" id="header_nav">
+                <li class="nav_el"><a class="nav_link" href="#">HOME</a></li>
+                <li class="nav_el"><a class="nav_link" href="#">UNSERE RÄUME</a></li>
+                <li class="nav_el"><a class="nav_link" href="#">Gutschein</a></li>
+                <li class="nav_el has_child"><a class="nav_link" href="#">Events</a>
+                    <ul class="nested_nav_list">
+                        <li class="nested_nav_el"><a class="nested_nav_link" href="#"><span>TEAMBUILDING</span></a></li>
+                        <li class="nested_nav_el"><a class="nested_nav_link" href="#"><span>FIRMENFEIER</span></a></li>
+                        <li class="nested_nav_el"><a class="nested_nav_link" href="#"><span>GEBURTSTAGE </span></a></li>
+                        <li class="nested_nav_el"><a class="nested_nav_link" href="#"><span>JGA</span></a></li>
+                        <li class="nested_nav_el"><a class="nested_nav_link" href="#"><span>SCHULKLASSEN </span></a></li>
+                    </ul>
+                </li>
+                <li class="nav_el"><a class="nav_link" href="#">Shop</a></li>
+                <li class="nav_el has_child"><a class="nav_link" href="#">ÜBER UNS</a>
+                    <ul class="nested_nav_list">
+                        <li class="nested_nav_el"><a class="nested_nav_link" href="#"><span>REZENSIONEN</span></a></li>
+                        <li class="nested_nav_el"><a class="nested_nav_link" href="#"><span>NEWS</span></a></li>
+                    </ul>
+                </li>
+                <li class="nav_el"><a class="nav_link" href="#">faq</a></li>
+                <li class="nav_el"><a class="nav_link" href="#">Kontakt</a></li>
+            </ul>
+            <ul class="side_frame_social">
+                <li><a class="side_social_link" href="#"><img class="svg" src="img/whatsup.svg" alt="img"/></a></li>
+                <li><a class="side_social_link" href="#"><img class="svg" src="img/fb.svg" alt="img"/></a></li>
+                <li><a class="side_social_link" href="#"><img class="svg" src="img/insta.svg" alt="img"/></a></li>
+                <li><a class="side_social_link" href="#"><img class="svg" src="img/telegram.svg" alt="img"/></a></li>
+            </ul>
+        </div>
+    </header><svg style="width:0;height:0;position:absolute;opacity:0;" aria-hidden="true" focusable="false"><lineargradient id="svg-gradient" x2="0" y2="1"><stop offset="0%" stop-color="#8F4E1C"></stop><stop offset="50%" stop-color="#D2AB34"></stop><stop offset="100%" stop-color="#e0b453"></stop></lineargradient></svg>
+    <main
+        class="content">
+        <section class="section-event-order simple_section">
+            <script>
+                //- var dayShows = 7;
+                var calendarData = [{
+                        date: 1,
+                        month: 'November',
+                        day: 'Montag',
+                        fullDate: '1.11.2019',
+                        timestamps: [{
+                                time: '10:30',
+                                ordered: false
+                            },
+                            {
+                                time: '12:00',
+                                ordered: false
+                            },
+                            {
+                                time: '13:30',
+                                ordered: false
+                            },
+                            {
+                                time: '15:00',
+                                ordered: false
+                            },
+                            {
+                                time: '16:30',
+                                ordered: true
+                            },
+                            {
+                                time: '18:00',
+                                ordered: false
+                            },
+                            {
+                                time: '19:30',
+                                ordered: false
+                            },
+                            {
+                                time: '21:00',
+                                ordered: false
+                            },
+                            {
+                                time: '22:30',
+                                ordered: false
+                            },
+                            {
+                                time: '23:59',
+                                ordered: false
+                            },
+                        ]
+                    },
+                    {
+                        date: 2,
+                        month: 'November',
+                        day: 'Dienstag',
+                        fullDate: '2.11.2019',
+                        timestamps: [{
+                                time: '10:30',
+                                ordered: false
+                            },
+                            {
+                                time: '12:00',
+                                ordered: false
+                            },
+                            {
+                                time: '13:30',
+                                ordered: false
+                            },
+                            {
+                                time: '15:00',
+                                ordered: false
+                            },
+                            {
+                                time: '16:30',
+                                ordered: false
+                            },
+                            {
+                                time: '18:00',
+                                ordered: false
+                            },
+                            {
+                                time: '19:30',
+                                ordered: false
+                            },
+                            {
+                                time: '21:00',
+                                ordered: false
+                            },
+                            {
+                                time: '22:30',
+                                ordered: false
+                            },
+                            {
+                                time: '23:59',
+                                ordered: false
+                            },
+                        ]
+                    },
+                    {
+                        date: 3,
+                        month: 'November',
+                        day: 'Mittwoch',
+                        fullDate: '3.11.2019',
+                        timestamps: [{
+                                time: '10:30',
+                                ordered: true
+                            },
+                            {
+                                time: '12:00',
+                                ordered: false
+                            },
+                            {
+                                time: '13:30',
+                                ordered: false
+                            },
+                            {
+                                time: '15:00',
+                                ordered: false
+                            },
+                            {
+                                time: '16:30',
+                                ordered: false
+                            },
+                            {
+                                time: '18:00',
+                                ordered: false
+                            },
+                            {
+                                time: '19:30',
+                                ordered: false
+                            },
+                            {
+                                time: '21:00',
+                                ordered: false
+                            },
+                            {
+                                time: '22:30',
+                                ordered: false
+                            },
+                            {
+                                time: '23:59',
+                                ordered: false
+                            },
+                        ]
+                    },
+                    {
+                        date: 4,
+                        month: 'November',
+                        day: 'Donnerstag',
+                        fullDate: '4.11.2019',
+                        timestamps: [{
+                                time: '10:30',
+                                ordered: false
+                            },
+                            {
+                                time: '12:00',
+                                ordered: false
+                            },
+                            {
+                                time: '13:30',
+                                ordered: false
+                            },
+                            {
+                                time: '15:00',
+                                ordered: false
+                            },
+                            {
+                                time: '16:30',
+                                ordered: false
+                            },
+                            {
+                                time: '18:00',
+                                ordered: false
+                            },
+                            {
+                                time: '19:30',
+                                ordered: false
+                            },
+                            {
+                                time: '21:00',
+                                ordered: false
+                            },
+                            {
+                                time: '22:30',
+                                ordered: false
+                            },
+                            {
+                                time: '23:59',
+                                ordered: false
+                            },
+                        ]
+                    },
+                    {
+                        date: 5,
+                        month: 'November',
+                        day: 'Freitag',
+                        fullDate: '5.11.2019',
+                        timestamps: [{
+                                time: '10:30',
+                                ordered: false
+                            },
+                            {
+                                time: '12:00',
+                                ordered: false
+                            },
+                            {
+                                time: '13:30',
+                                ordered: false
+                            },
+                            {
+                                time: '15:00',
+                                ordered: false
+                            },
+                            {
+                                time: '16:30',
+                                ordered: false
+                            },
+                            {
+                                time: '18:00',
+                                ordered: false
+                            },
+                            {
+                                time: '19:30',
+                                ordered: false
+                            },
+                            {
+                                time: '21:00',
+                                ordered: false
+                            },
+                            {
+                                time: '22:30',
+                                ordered: false
+                            },
+                            {
+                                time: '23:59',
+                                ordered: false
+                            },
+                        ]
+                    },
+                    {
+                        date: 6,
+                        month: 'November',
+                        day: 'Samstag',
+                        fullDate: '6.11.2019',
+                        timestamps: [{
+                                time: '10:30',
+                                ordered: false
+                            },
+                            {
+                                time: '12:00',
+                                ordered: false
+                            },
+                            {
+                                time: '13:30',
+                                ordered: false
+                            },
+                            {
+                                time: '15:00',
+                                ordered: false
+                            },
+                            {
+                                time: '16:30',
+                                ordered: false
+                            },
+                            {
+                                time: '18:00',
+                                ordered: false
+                            },
+                            {
+                                time: '19:30',
+                                ordered: false
+                            },
+                            {
+                                time: '21:00',
+                                ordered: false
+                            },
+                            {
+                                time: '22:30',
+                                ordered: false
+                            },
+                            {
+                                time: '23:59',
+                                ordered: false
+                            },
+                        ]
+                    },
+                    {
+                        date: 7,
+                        month: 'November',
+                        day: 'Sonntag',
+                        fullDate: '7.11.2019',
+                        timestamps: [{
+                                time: '10:30',
+                                ordered: false
+                            },
+                            {
+                                time: '12:00',
+                                ordered: false
+                            },
+                            {
+                                time: '13:30',
+                                ordered: false
+                            },
+                            {
+                                time: '15:00',
+                                ordered: false
+                            },
+                            {
+                                time: '16:30',
+                                ordered: false
+                            },
+                            {
+                                time: '18:00',
+                                ordered: false
+                            },
+                            {
+                                time: '19:30',
+                                ordered: false
+                            },
+                            {
+                                time: '21:00',
+                                ordered: false
+                            },
+                            {
+                                time: '22:30',
+                                ordered: false
+                            },
+                            {
+                                time: '23:59',
+                                ordered: false
+                            },
+                        ]
+                    },
+                    {
+                        date: 8,
+                        month: 'November',
+                        day: 'Montag',
+                        fullDate: '8.11.2019',
+                        timestamps: [{
+                                time: '10:30',
+                                ordered: false
+                            },
+                            {
+                                time: '12:00',
+                                ordered: false
+                            },
+                            {
+                                time: '13:30',
+                                ordered: false
+                            },
+                            {
+                                time: '15:00',
+                                ordered: false
+                            },
+                            {
+                                time: '16:30',
+                                ordered: false
+                            },
+                            {
+                                time: '18:00',
+                                ordered: false
+                            },
+                            {
+                                time: '19:30',
+                                ordered: false
+                            },
+                            {
+                                time: '21:00',
+                                ordered: false
+                            },
+                            {
+                                time: '22:30',
+                                ordered: false
+                            },
+                            {
+                                time: '23:59',
+                                ordered: false
+                            },
+                        ]
+                    },
+                    {
+                        date: 9,
+                        month: 'November',
+                        day: 'Dienstag',
+                        fullDate: '9.11.2019',
+                        timestamps: [{
+                                time: '10:30',
+                                ordered: false
+                            },
+                            {
+                                time: '12:00',
+                                ordered: false
+                            },
+                            {
+                                time: '13:30',
+                                ordered: false
+                            },
+                            {
+                                time: '15:00',
+                                ordered: false
+                            },
+                            {
+                                time: '16:30',
+                                ordered: false
+                            },
+                            {
+                                time: '18:00',
+                                ordered: false
+                            },
+                            {
+                                time: '19:30',
+                                ordered: false
+                            },
+                            {
+                                time: '21:00',
+                                ordered: false
+                            },
+                            {
+                                time: '22:30',
+                                ordered: false
+                            },
+                            {
+                                time: '23:59',
+                                ordered: false
+                            },
+                        ]
+                    },
+                    {
+                        date: 10,
+                        month: 'November',
+                        day: 'Mittwoch',
+                        fullDate: '10.11.2019',
+                        timestamps: [{
+                                time: '10:30',
+                                ordered: false
+                            },
+                            {
+                                time: '12:00',
+                                ordered: false
+                            },
+                            {
+                                time: '13:30',
+                                ordered: false
+                            },
+                            {
+                                time: '15:00',
+                                ordered: false
+                            },
+                            {
+                                time: '16:30',
+                                ordered: false
+                            },
+                            {
+                                time: '18:00',
+                                ordered: false
+                            },
+                            {
+                                time: '19:30',
+                                ordered: false
+                            },
+                            {
+                                time: '21:00',
+                                ordered: false
+                            },
+                            {
+                                time: '22:30',
+                                ordered: false
+                            },
+                            {
+                                time: '23:59',
+                                ordered: false
+                            },
+                        ]
+                    },
+                    {
+                        date: 11,
+                        month: 'November',
+                        day: 'Donnerstag',
+                        fullDate: '11.11.2019',
+                        timestamps: [{
+                                time: '10:30',
+                                ordered: false
+                            },
+                            {
+                                time: '12:00',
+                                ordered: false
+                            },
+                            {
+                                time: '13:30',
+                                ordered: false
+                            },
+                            {
+                                time: '15:00',
+                                ordered: false
+                            },
+                            {
+                                time: '16:30',
+                                ordered: false
+                            },
+                            {
+                                time: '18:00',
+                                ordered: false
+                            },
+                            {
+                                time: '19:30',
+                                ordered: false
+                            },
+                            {
+                                time: '21:00',
+                                ordered: false
+                            },
+                            {
+                                time: '22:30',
+                                ordered: false
+                            },
+                            {
+                                time: '23:59',
+                                ordered: false
+                            },
+                        ]
+                    },
+                    {
+                        date: 12,
+                        month: 'November',
+                        day: 'Freitag',
+                        fullDate: '12.11.2019',
+                        timestamps: [{
+                                time: '10:30',
+                                ordered: false
+                            },
+                            {
+                                time: '12:00',
+                                ordered: false
+                            },
+                            {
+                                time: '13:30',
+                                ordered: false
+                            },
+                            {
+                                time: '15:00',
+                                ordered: false
+                            },
+                            {
+                                time: '16:30',
+                                ordered: false
+                            },
+                            {
+                                time: '18:00',
+                                ordered: false
+                            },
+                            {
+                                time: '19:30',
+                                ordered: false
+                            },
+                            {
+                                time: '21:00',
+                                ordered: false
+                            },
+                            {
+                                time: '22:30',
+                                ordered: false
+                            },
+                            {
+                                time: '23:59',
+                                ordered: false
+                            },
+                        ]
+                    },
+                    {
+                        date: 13,
+                        month: 'November',
+                        day: 'Samstag',
+                        fullDate: '13.11.2019',
+                        timestamps: [{
+                                time: '10:30',
+                                ordered: false
+                            },
+                            {
+                                time: '12:00',
+                                ordered: false
+                            },
+                            {
+                                time: '13:30',
+                                ordered: false
+                            },
+                            {
+                                time: '15:00',
+                                ordered: false
+                            },
+                            {
+                                time: '16:30',
+                                ordered: false
+                            },
+                            {
+                                time: '18:00',
+                                ordered: false
+                            },
+                            {
+                                time: '19:30',
+                                ordered: false
+                            },
+                            {
+                                time: '21:00',
+                                ordered: false
+                            },
+                            {
+                                time: '22:30',
+                                ordered: false
+                            },
+                            {
+                                time: '23:59',
+                                ordered: false
+                            },
+                        ]
+                    },
+                    {
+                        date: 14,
+                        month: 'November',
+                        day: 'Sonntag',
+                        fullDate: '14.11.2019',
+                        timestamps: [{
+                                time: '10:30',
+                                ordered: false
+                            },
+                            {
+                                time: '12:00',
+                                ordered: false
+                            },
+                            {
+                                time: '13:30',
+                                ordered: false
+                            },
+                            {
+                                time: '15:00',
+                                ordered: false
+                            },
+                            {
+                                time: '16:30',
+                                ordered: false
+                            },
+                            {
+                                time: '18:00',
+                                ordered: false
+                            },
+                            {
+                                time: '19:30',
+                                ordered: false
+                            },
+                            {
+                                time: '21:00',
+                                ordered: false
+                            },
+                            {
+                                time: '22:30',
+                                ordered: false
+                            },
+                            {
+                                time: '23:59',
+                                ordered: false
+                            },
+                        ]
+                    },
+                    {
+                        date: 15,
+                        month: 'November',
+                        day: 'Montag',
+                        fullDate: '15.11.2019',
+                        timestamps: [{
+                                time: '10:30',
+                                ordered: false
+                            },
+                            {
+                                time: '12:00',
+                                ordered: false
+                            },
+                            {
+                                time: '13:30',
+                                ordered: false
+                            },
+                            {
+                                time: '15:00',
+                                ordered: false
+                            },
+                            {
+                                time: '16:30',
+                                ordered: false
+                            },
+                            {
+                                time: '18:00',
+                                ordered: false
+                            },
+                            {
+                                time: '19:30',
+                                ordered: false
+                            },
+                            {
+                                time: '21:00',
+                                ordered: false
+                            },
+                            {
+                                time: '22:30',
+                                ordered: false
+                            },
+                            {
+                                time: '23:59',
+                                ordered: false
+                            },
+                        ]
+                    }, {
+                        date: 16,
+                        month: 'November',
+                        day: 'Dienstag',
+                        fullDate: '16.11.2019',
+                        timestamps: [{
+                                time: '10:30',
+                                ordered: false
+                            },
+                            {
+                                time: '12:00',
+                                ordered: false
+                            },
+                            {
+                                time: '13:30',
+                                ordered: false
+                            },
+                            {
+                                time: '15:00',
+                                ordered: false
+                            },
+                            {
+                                time: '16:30',
+                                ordered: false
+                            },
+                            {
+                                time: '18:00',
+                                ordered: false
+                            },
+                            {
+                                time: '19:30',
+                                ordered: false
+                            },
+                            {
+                                time: '21:00',
+                                ordered: false
+                            },
+                            {
+                                time: '22:30',
+                                ordered: false
+                            },
+                            {
+                                time: '23:59',
+                                ordered: false
+                            },
+                        ]
+                    },
+                    {
+                        date: 1,
+                        month: 'Dezember',
+                        day: 'Sonntag',
+                        fullDate: '1.12.2019',
+                        timestamps: [{
+                                time: '10:30',
+                                ordered: false
+                            },
+                            {
+                                time: '12:00',
+                                ordered: false
+                            },
+                            {
+                                time: '13:30',
+                                ordered: false
+                            },
+                            {
+                                time: '15:00',
+                                ordered: false
+                            },
+                            {
+                                time: '16:30',
+                                ordered: false
+                            },
+                            {
+                                time: '18:00',
+                                ordered: false
+                            },
+                            {
+                                time: '19:30',
+                                ordered: false
+                            },
+                            {
+                                time: '21:00',
+                                ordered: false
+                            },
+                            {
+                                time: '22:30',
+                                ordered: false
+                            },
+                            {
+                                time: '23:59',
+                                ordered: false
+                            },
+                        ]
+                    },
+                    {
+                        date: 2,
+                        month: 'Dezember',
+                        day: 'Montag',
+                        fullDate: '2.12.2019',
+                        timestamps: [{
+                                time: '10:30',
+                                ordered: false
+                            },
+                            {
+                                time: '12:00',
+                                ordered: false
+                            },
+                            {
+                                time: '13:30',
+                                ordered: false
+                            },
+                            {
+                                time: '15:00',
+                                ordered: false
+                            },
+                            {
+                                time: '16:30',
+                                ordered: false
+                            },
+                            {
+                                time: '18:00',
+                                ordered: false
+                            },
+                            {
+                                time: '19:30',
+                                ordered: false
+                            },
+                            {
+                                time: '21:00',
+                                ordered: false
+                            },
+                            {
+                                time: '22:30',
+                                ordered: false
+                            },
+                            {
+                                time: '23:59',
+                                ordered: false
+                            },
+                        ]
+                    },
+                    {
+                        date: 3,
+                        month: 'Dezember',
+                        day: 'Dienstag',
+                        fullDate: '3.12.2019',
+                        timestamps: [{
+                                time: '10:30',
+                                ordered: false
+                            },
+                            {
+                                time: '12:00',
+                                ordered: false
+                            },
+                            {
+                                time: '13:30',
+                                ordered: false
+                            },
+                            {
+                                time: '15:00',
+                                ordered: true
+                            },
+                            {
+                                time: '16:30',
+                                ordered: false
+                            },
+                            {
+                                time: '18:00',
+                                ordered: false
+                            },
+                            {
+                                time: '19:30',
+                                ordered: false
+                            },
+                            {
+                                time: '21:00',
+                                ordered: false
+                            },
+                            {
+                                time: '22:30',
+                                ordered: false
+                            },
+                            {
+                                time: '23:59',
+                                ordered: false
+                            },
+                        ]
+                    },
+                    {
+                        date: 4,
+                        month: 'Dezember',
+                        day: 'Mittwoch',
+                        fullDate: '4.12.2019',
+                        timestamps: [{
+                                time: '10:30',
+                                ordered: false
+                            },
+                            {
+                                time: '12:00',
+                                ordered: false
+                            },
+                            {
+                                time: '13:30',
+                                ordered: false
+                            },
+                            {
+                                time: '15:00',
+                                ordered: false
+                            },
+                            {
+                                time: '16:30',
+                                ordered: false
+                            },
+                            {
+                                time: '18:00',
+                                ordered: false
+                            },
+                            {
+                                time: '19:30',
+                                ordered: false
+                            },
+                            {
+                                time: '21:00',
+                                ordered: false
+                            },
+                            {
+                                time: '22:30',
+                                ordered: false
+                            },
+                            {
+                                time: '23:59',
+                                ordered: false
+                            },
+                        ]
+                    },
+                ];
+            </script>
+            <div class="screen_content">
+                <ul class="breadcrumbs_list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><span>Das verlorene Grabmal</span></li>
+                </ul>
+                <div class="main_title_wrapper">
+                    <div class="main_title">DAS VERLORENE GRABMA</div>
+                </div>
+                <div class="event_sides">
+                    <div class="event_side event_side_content_wrapper">
+                        <div class="event_description_content">
+                            <div class="event_side_description">Du und dein Team seid Archäologen und findet nach ausgiebigen Grabungen endlich den Eingang zum Grabmal, welches seit 3.000 Jahren von keiner Menschenseele betreten wurde. Ihr habt zwar euer Ziel erreicht, doch eure Freude
+                                schlägt schnell in Panik um als euch der Weg zurück mit Sand versperrt wird. Niemand weiß, dass ihr hier seid, niemand kann euch helfen. Findet ihr einen Weg zurück oder bleibt ihr für immer eingesperrt?</div>
+                            <ul class="event_features">
+                                <li class="event_feature">
+                                    <div class="event_feature_ico"><img class="svg" src="img/persones.svg" alt="img" /></div>
+                                    <div class="event_feature_text"><strong>2-6 Spieler</strong></div>
+                                </li>
+                                <li class="event_feature">
+                                    <div class="event_feature_ico"><img class="svg" src="img/info.svg" alt="img" /></div>
+                                    <div class="event_feature_text">Nicht geeignet für körperlich eingeschränkte Menschen</div>
+                                </li>
+                                <li class="event_feature">
+                                    <div class="event_feature_ico"><img class="svg" src="img/atention.svg" alt="img" /></div>
+                                    <div class="event_feature_text">Nicht geeignet für Schwangere</div>
+                                </li>
+                                <li class="event_feature">
+                                    <div class="event_feature_ico"><img class="svg" src="img/info.svg" alt="img" /></div>
+                                    <div class="event_feature_text">Kinder bis 12 Jahre nur in Begleitung eines Erwachsenen</div>
+                                </li>
+                                <li class="event_feature">
+                                    <div class="event_feature_ico"><img class="svg" src="img/info.svg" alt="img" /></div>
+                                    <div class="event_feature_text">Spieler – € pro</div>
+                                </li>
+                            </ul>
+                            <div class="article__bottom_buttons"><a class="main_btn small bordered" href="#"><span class="main_btn_inner">to order</span></a><a class="main_btn small bordered" href="#"><span class="main_btn_inner">to reviews</span></a></div>
+                        </div>
+                    </div>
+                    <div class="event_side event_side_slider_wrapper">
+                        <div class="event_slider">
+                            <div class="event_slide"><img src="img/event_slide1.jpg" alt="img/" /></div>
+                            <div class="event_slide"><img src="img/event_slide2.jpg" alt="img/" /></div>
+                            <div class="event_slide"><img src="img/event_slide3.jpg" alt="img/" /></div>
+                            <div class="event_slide"><img src="img/event_slide4.jpg" alt="img/" /></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="comments_slider">
+                    <div>
+                        <div class="comments_slide">
+                            <div class="comments_slide__head">
+                                <div class="comments_slide__title">Wow! WOW! SUPER!</div>
+                                <ul class="comments_slide__rate">
+                                    <li class="filled"><img class="svg" src="img/star.svg" alt="img" /></li>
+                                    <li class="filled"><img class="svg" src="img/star.svg" alt="img" /></li>
+                                    <li class="filled"><img class="svg" src="img/star.svg" alt="img" /></li>
+                                    <li class="filled"><img class="svg" src="img/star.svg" alt="img" /></li>
+                                    <li><img class="svg" src="img/star.svg" alt="img" /></li>
+                                </ul>
+                            </div>
+                            <div class="comments_slide__body">
+                                <div class="comments_slide__comment">Lorem Ipsum ist ein einfacher Demo-Text für die Print- und Schriftindustrie. Lorem Ipsum ist in der Industrie bereits der Standard Demo-Text seit 1500, als ein unbekannter </div>
+                                <div class="comments_slide__name">Philip James</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="comments_slide">
+                            <div class="comments_slide__head">
+                                <div class="comments_slide__title">Wow! WOW! SUPER!</div>
+                                <ul class="comments_slide__rate">
+                                    <li class="filled"><img class="svg" src="img/star.svg" alt="img" /></li>
+                                    <li class="filled"><img class="svg" src="img/star.svg" alt="img" /></li>
+                                    <li class="filled"><img class="svg" src="img/star.svg" alt="img" /></li>
+                                    <li class="filled"><img class="svg" src="img/star.svg" alt="img" /></li>
+                                    <li><img class="svg" src="img/star.svg" alt="img" /></li>
+                                </ul>
+                            </div>
+                            <div class="comments_slide__body">
+                                <div class="comments_slide__comment">Lorem Ipsum ist ein einfacher Demo-Text für die Print- und Schriftindustrie. Lorem Ipsum ist in der Industrie bereits der Standard Demo-Text seit 1500, als ein unbekannter </div>
+                                <div class="comments_slide__name">Philip James</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="comments_slide">
+                            <div class="comments_slide__head">
+                                <div class="comments_slide__title">Wow! WOW! SUPER!</div>
+                                <ul class="comments_slide__rate">
+                                    <li class="filled"><img class="svg" src="img/star.svg" alt="img" /></li>
+                                    <li class="filled"><img class="svg" src="img/star.svg" alt="img" /></li>
+                                    <li class="filled"><img class="svg" src="img/star.svg" alt="img" /></li>
+                                    <li class="filled"><img class="svg" src="img/star.svg" alt="img" /></li>
+                                    <li><img class="svg" src="img/star.svg" alt="img" /></li>
+                                </ul>
+                            </div>
+                            <div class="comments_slide__body">
+                                <div class="comments_slide__comment">Lorem Ipsum ist ein einfacher Demo-Text für die Print- und Schriftindustrie. Lorem Ipsum ist in der Industrie bereits der Standard Demo-Text seit 1500, als ein unbekannter </div>
+                                <div class="comments_slide__name">Philip James</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="comments_slide">
+                            <div class="comments_slide__head">
+                                <div class="comments_slide__title">Wow! WOW! SUPER!</div>
+                                <ul class="comments_slide__rate">
+                                    <li class="filled"><img class="svg" src="img/star.svg" alt="img" /></li>
+                                    <li class="filled"><img class="svg" src="img/star.svg" alt="img" /></li>
+                                    <li class="filled"><img class="svg" src="img/star.svg" alt="img" /></li>
+                                    <li class="filled"><img class="svg" src="img/star.svg" alt="img" /></li>
+                                    <li><img class="svg" src="img/star.svg" alt="img" /></li>
+                                </ul>
+                            </div>
+                            <div class="comments_slide__body">
+                                <div class="comments_slide__comment">Lorem Ipsum ist ein einfacher Demo-Text für die Print- und Schriftindustrie. Lorem Ipsum ist in der Industrie bereits der Standard Demo-Text seit 1500, als ein unbekannter </div>
+                                <div class="comments_slide__name">Philip James</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="calendar_container">
+                    <div class="calendar_wrapper">
+                        <div class="calendar__head">
+                            <div class="calendar__head_side calendar__head_left">
+                                <div class="calendar_select_wrapper">
+                                    <div class="select_wrapper calendar_select"><select name="calendar"><option value="November" selected="selected">November</option><option value="Dezember">Dezember</option></select></div>
+                                </div>
+                            </div>
+                            <div class="calendar__head_side calendar__head_middle">
+                                <div class="acalendar_arrows showed"><button class="acalendar_arrow acalendar_arrow_prev"><img class="svg" src="img/slider_left.svg" alt="img"/></button>
+                                    <div class="acalendar_arrows_ico"><img class="svg" src="img/calendar.svg" alt="img" /></div><button class="acalendar_arrow acalendar_arrow_next"><img class="svg" src="img/slider_right.svg" alt="img"/></button></div>
+                            </div>
+                            <div class="calendar__head_side calendar__head_right">
+                                <div class="calendar_head_title">zu buchen</div>
+                            </div>
+                        </div>
+                        <div class="calendar__body calendar__js" data-from="0" data-step="7"></div>
+                        <div class="calendar_modal" id="order_modal">
+                            <ul class="calendar_modal__head">
+                                <li class="cmh_el">
+                                    <div class="cmh_el_side cmh_el__left"><img class="svg" src="img/time.svg" alt="img" />
+                                        <div class="cmh_el__time">16:30</div>
+                                    </div>
+                                    <div class="cmh_el_side cmh_el__right"><img class="svg" src="img/check.svg" alt="img" /></div>
+                                </li>
+                                <li class="cmh_el">
+                                    <div class="cmh_el_side cmh_el__left"><img class="svg" src="img/calendar2.svg" alt="img" />
+                                        <div class="cmh_el__date">27.11.2019</div>
+                                    </div>
+                                    <div class="cmh_el_side cmh_el__right"><img class="svg" src="img/check.svg" alt="img" /></div>
+                                </li>
+                            </ul>
+                            <div class="calendar_modal__body">
+                                <form class="form_send" action="mail.php" method="post"><input type="hidden" name="project_name" value="" /><input type="hidden" name="form_subject" value="" /><input class="order_time" type="hidden" name="Order time" value="" /><input class="order_date" type="hidden" name="Order date"
+                                        value="" />
+                                    <div class="calendar_modal__body_elements">
+                                        <div class="form_elements">
+                                            <div class="form_element"><input type="text" placeholder="Your name" required="required" name="Your name" /></div>
+                                            <div class="form_element"><input type="email" placeholder="Your e-mail" name="Your e-mail" /></div>
+                                            <div class="form_element"><input type="tel" placeholder="Telefon" required="required" name="Telefon" /></div>
+                                            <div class="form_element"><input type="text" placeholder="Personen" name="Personen" /></div>
+                                        </div>
+                                        <div class="mfv_checker ch_block"><label><input type="checkbox" name="checkbox"/><div class="ch_block_icon"><img class="svg" src="img/ch.svg" alt="img"/></div>Ich akzeptiere die <a href="#">ACB</a></label></div>
+                                        <div class="calendar_modal__buttons"><a class="main_btn small bordered mdl_close" href="#"><span class="main_btn_inner">Abbrechen</span></a><button class="submit_btn main_btn small" type="submit"><span class="main_btn_inner">Buchen</span></button></div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="calendar_sign">
+                        <div class="calendar_sign_ico"><img class="svg" src="img/alert-poligon.svg" alt="img" /></div>
+                        <div class="calendar_sign_text">Please check that this widget <strong>Facebook Reviews </strong>has a connected <a href="#">Facebook</a>.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-rooms simple_screen dark_bg" id="rooms" style="background: url(img/bg_rooms.jpg) center/cover no-repeat;">
+            <div class="screen_content">
+                <div class="main_title_wrapper">
+                    <div class="main_title">OTHER ROOMS</div>
+                </div>
+                <div class="rooms_blocks">
+                    <div class="rooms_block">
+                        <div class="rooms_block__frame" style="background: url(img/rb1.jpg) center/cover;">
+                            <div class="rooms_block__frame_curtain" style="background: url(img/room_curtain.png) center/contain;"></div><a class="small main_btn bordered" href="#"><span class="main_btn_inner">Jetzt buchen</span></a></div><a class="rooms_block__title" href="#">DAS VERLORENE  <br/>GRABMAL</a></div>
+                    <div class="rooms_block">
+                        <div class="rooms_block__frame" style="background: url(img/rb2.jpg) center/cover;">
+                            <div class="rooms_block__frame_curtain" style="background: url(img/room_curtain.png) center/contain;"></div><a class="small main_btn bordered" href="#"><span class="main_btn_inner">Jetzt buchen</span></a></div><a class="rooms_block__title" href="#">DIE VERFLUCHTEN  <br/>SCHÄTZE</a></div>
+                    <div class="rooms_block">
+                        <div class="rooms_block__frame" style="background: url(img/rb3.jpg) center/cover;">
+                            <div class="rooms_block__frame_curtain" style="background: url(img/room_curtain.png) center/contain;"></div><a class="small main_btn bordered" href="#"><span class="main_btn_inner">Jetzt buchen</span></a></div><a class="rooms_block__title" href="#">MAFIA  <br/>GELD</a></div>
+                    <div class="rooms_block">
+                        <div class="rooms_block__frame" style="background: url(img/rb4.jpg) center/cover;">
+                            <div class="rooms_block__frame_curtain" style="background: url(img/room_curtain.png) center/contain;"></div><a class="small main_btn bordered" href="#"><span class="main_btn_inner">Jetzt buchen</span></a></div><a class="rooms_block__title" href="#">EXPEDITION  <br/>APOLLO 13Z </a></div>
+                </div>
+            </div>
+        </section>
+        </main>
+        <footer class="footer section fp-auto-height dark_bg">
+            <div class="screen_content">
+                <div class="footer_cols">
+                    <div class="footer_col first_col">
+                        <div class="footer_col__top">
+                            <div class="footer_sides">
+                                <div class="footer_side footer_side__left"><a class="logo" href="index.html"><img src="img/logo.png" alt="img"/></a></div>
+                                <div class="footer_side footer_side__right">
+                                    <div class="footer_col__title">MENU</div>
+                                    <ul class="footer_links">
+                                        <li><a href="#">Home</a></li>
+                                        <li><a href="#">Unsere Räume</a></li>
+                                        <li><a href="#">Über uns</a></li>
+                                        <li><a href="#">FAQ</a></li>
+                                        <li><a href="#">Kontakt</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer_col__bottom">
+                            <p>© 2019. All rights reserved. <a href="#">Datenschutzhinweis</a></p>
+                        </div>
+                    </div>
+                    <div class="footer_col middle_col">
+                        <div class="footer_col__top">
+                            <div class="footer_col_block">
+                                <div class="footer_col__title">GET SOCIAL</div>
+                                <ul class="social_list">
+                                    <li><a class="soc_link" href="#"><img class="svg" src="img/whatsup.svg" alt="img"/></a></li>
+                                    <li><a class="soc_link" href="#"><img class="svg" src="img/fb.svg" alt="img"/></a></li>
+                                    <li><a class="soc_link" href="#"><img class="svg" src="img/insta.svg" alt="img"/></a></li>
+                                    <li><a class="soc_link" href="#"><img class="svg" src="img/telegram.svg" alt="img"/></a></li>
+                                    <li><a class="soc_link" href="#"><img class="svg" src="img/tripadvisor.svg" alt="img"/></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer_col__bottom">
+                            <p class="copyright">© Copyright 2019. Escape Welt. All rights reserved.</p>
+                        </div>
+                    </div>
+                    <div class="footer_col last_col">
+                        <div class="footer_col__top">
+                            <div class="footer_col__title">KONTAKT</div>
+                            <ul class="footer_contacts">
+                                <li>
+                                    <a class="ico_link" href="#">
+                                        <div class="ico_link_img"><img class="svg" src="img/pin.svg" alt="img" /></div><span class="ico_link_text">Oststrasse 20, 04317 Leipzig, Germany</span></a>
+                                </li>
+                                <li>
+                                    <div class="ico_link">
+                                        <div class="ico_link_img"><img class="svg" src="img/phone.svg" alt="img" /></div>
+                                        <div class="ico_link_text"><a href="tel:+491733109181">+49 173 3109181</a><a href="tel:+49034124874905">+49 (0) 341 24 87 49 05</a></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="ico_link" href="mailto:info@escapewelt.de">
+                                        <div class="ico_link_img"><img class="svg" src="img/mail.svg" alt="img" /></div><span class="ico_link_text">info@escapewelt.de</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer_col__bottom">
+                            <ul class="fcb_list">
+                                <li><a href="#">Impressum</a></li>
+                                <li> <a href="#">Datenschutz</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="js/jquery.js"></script>
+        <script src="js/libs.min.js"></script>
+        <script src="js/main.js"></script>
+</body>
+
+</html>
